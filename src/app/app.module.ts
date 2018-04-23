@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+// import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { PlusComponent } from './plus/plus.component';
-import { CalendarComponent } from './calendar/calendar.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {AppRoutingModule} from './app-routing.module';
 import {CalendarModule} from './calendar/calendar.module';
@@ -17,8 +16,7 @@ import {CalendarModule} from './calendar/calendar.module';
   declarations: [
     AppComponent,
     MenuComponent,
-    PlusComponent,
-    CalendarComponent,
+    PlusComponent
   ],
   imports: [
     BrowserModule,
@@ -26,8 +24,8 @@ import {CalendarModule} from './calendar/calendar.module';
     AppRoutingModule,
     FormsModule,
     CalendarModule,
-    HttpClient,
-    HttpClientModule
+    // HttpClient,
+    // HttpClientModule
     // RouterModule.forRoot(appRoutes),
 
   ],
