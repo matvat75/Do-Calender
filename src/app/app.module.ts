@@ -1,23 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-// import {AppRoutingModule} from './app-routing.module';
 import { NgModule } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { PlusComponent } from './plus/plus.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import {RouterModule, Routes} from '@angular/router';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import {AppRoutingModule} from './app-routing.module';
+import {CalendarModule} from './calendar/calendar.module';
 
-
-
-
-const appRoutes: Routes = [
-  {path: 'dashboard' , component : MenuComponent},
-  {path: 'plus', component: PlusComponent}
-  ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,11 +23,19 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
      BrowserModule , AngularFontAwesomeModule,
-    // AppRoutingModule
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
+    FormsModule,
+    CalendarModule,
+    HttpClient,
+    HttpClientModule
+    // RouterModule.forRoot(appRoutes),
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
