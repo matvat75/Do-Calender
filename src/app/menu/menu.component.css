@@ -1,6 +1,3 @@
-@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-/*//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css*!*!*/
-
 /*@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");*/
 @import url("//www.freepik.com/free-vector/hand-drawn-business-icons-collection_1091815.htm");
 .menu {
@@ -64,6 +61,8 @@ menu li a.fa-lightbulb-o:before{content:"\f0eb"}
 .menu li a.archive:before {
   content: "\f187";
 }
+.menu li a.fa-calendar-plus-o:before{content:"\f271"}
+/*.menu li a.*/
 .menu li a.pencil:before {
   content: "\f040";
 }

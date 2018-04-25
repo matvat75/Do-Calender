@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 // import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -11,12 +12,18 @@ import { PlusComponent } from './plus/plus.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {AppRoutingModule} from './app-routing.module';
 import {CalendarModule} from './calendar/calendar.module';
+import { DoComponent } from './do/do.component';
+import { DoerComponent } from './doer/doer.component';
+import { IdeaComponent } from './idea/idea.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    PlusComponent
+    PlusComponent,
+    DoComponent,
+    DoerComponent,
+    IdeaComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,9 @@ import {CalendarModule} from './calendar/calendar.module';
     AppRoutingModule,
     FormsModule,
     CalendarModule,
-    // HttpClient,
+    // CalendarModule.forRoot()
+    NgbModule.forRoot()
+// HttpClient,
     // HttpClientModule
     // RouterModule.forRoot(appRoutes),
 
@@ -33,6 +42,8 @@ import {CalendarModule} from './calendar/calendar.module';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
 
 
 
