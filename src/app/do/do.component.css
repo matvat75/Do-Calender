@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/*@import url('https://fonts.googleapis.com/css?family=Merriweather');*/
+/**,*/
+/**:before,*/
+/**:after {*/
+  /*-moz-box-sizing: border-box;*/
+  /*-webkit-box-sizing: border-box;*/
+  /*box-sizing: border-box;*/
+/*}*/
 
 html, body {
   /*background:wheat;*/
@@ -109,6 +109,11 @@ form textarea {
   /*width: 200px;*/
   padding: 5px;
 }
+
+
+
+
+
 /*Rating star*/
 /**/
 /**/
