@@ -11,26 +11,30 @@ import { MenuComponent } from './menu/menu.component';
 import { PlusComponent } from './plus/plus.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {AppRoutingModule} from './app-routing.module';
-import {CalendarModule} from './calendar/calendar.module';
+import {CalendarComponent} from './calendar/calendar.component';
 import { DoComponent } from './do/do.component';
 import { DoerComponent } from './doer/doer.component';
 import { IdeaComponent } from './idea/idea.component';
+import { DoPlusComponent } from './do-plus/do-plus.component';
+import { DoerPlusComponent } from './doer-plus/doer-plus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
+    CalendarComponent,
     PlusComponent,
     DoComponent,
     DoerComponent,
-    IdeaComponent
+    IdeaComponent,
+    DoPlusComponent,
+    DoerPlusComponent
   ],
   imports: [
     BrowserModule,
      BrowserModule , AngularFontAwesomeModule,
     AppRoutingModule,
     FormsModule,
-    CalendarModule,
     // CalendarModule.forRoot()
     NgbModule.forRoot()
 // HttpClient,
